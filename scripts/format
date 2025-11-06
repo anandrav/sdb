@@ -1,4 +1,5 @@
 #!/bin/bash
 
-find include src test tools \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) -exec clang-format -i -style=Google {} +
+# find include src test tools \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) -exec clang-format -i -style=Google {} +
+git ls-files '*.cpp' '*.h' '*.hpp' | xargs clang-format -i -style=Google
 
