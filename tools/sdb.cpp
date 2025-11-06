@@ -15,7 +15,7 @@ pid_t attach(int argc, const char **argv) {
   }
   return pid;
 }
-} // namespace
+}  // namespace
 
 int main(int argc, const char **argv) {
   if (argc == 1) {
