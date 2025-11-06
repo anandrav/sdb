@@ -1,0 +1,4 @@
+#!/bin/bash
+
+find include src test tools \( -name "*.cpp" -o -name "*.h" -o -name "*.hpp" \) -exec clang-format -i -style=Google {} +
+
