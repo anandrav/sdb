@@ -6,4 +6,5 @@ cmake .. -DCMAKE_TOOLCHAIN_FILE="../../vcpkg/scripts/buildsystems/vcpkg.cmake"
 make
 
 sudo setcap CAP_SYS_PTRACE=+eip tools/sdb
+sudo setcap CAP_SYS_PTRACE=+eip test/tests
 
