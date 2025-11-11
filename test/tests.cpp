@@ -37,3 +37,7 @@ TEST_CASE("process::attach success", "[process]") {
   auto proc = process::attach(target->pid());
   REQUIRE(get_process_status(target->pid()) == 't');
 }
+
+TEST_CASE("process::attach invalid PID", "[process]") {
+  REQUIRE_THROWS_AS(process::attach(0), error);
+}
